@@ -1,0 +1,141 @@
+body {
+    margin: 0 0;
+    opacity: 0;
+    -webkit-transition: opacity 2s ease;
+    background-color: #202020;
+}
+
+.wrapper {
+    background-color: #202020;
+    font-size: 1em;
+}
+
+.header {
+    align-items: center;
+    background-image: url("http://i.imgur.com/A06GjWA.jpg");
+    opacity: 1;
+    text-align: center;
+}
+
+.header:hover {
+    cursor: pointer;
+}
+
+.hiddenTitle {
+    position: absolute;
+    font-size: 4em;
+    font-family: serif;
+    font-weight: 600;
+    text-shadow: -0.02em 0.05em #02B3FF, 0 0.02em 0.05em #02B3FF, 0.02em 0.05em #02B3FF, 0 -0.02em 0.05em #02B3FF;
+    color: #202020;
+    opacity: 0;
+    margin: 0.15em auto;
+    -webkit-animation: blink 1ms 2500 linear;
+    -webkit-transition: opacity 500ms ease-in-out;
+}
+
+.hiddenContent {
+    cursor: default;
+    position: absolute;
+    opacity: 0;
+    /*margin: 0.15em 0.5em;
+    margin-top: 40px;*/
+    float: left;
+    clear-after: both;
+    -webkit-transition: opacity 500ms ease-in-out;
+}
+
+.container {
+
+}
+
+.aboutVisible {
+    position: relative;
+    opacity: 1.5;
+    text-align: center;
+    font-size: 3em;
+    font-family: serif;
+    font-weight: 200;
+    text-shadow: -0.02em 0.05em #02B3FF, 0 0.02em 0.05em #02B3FF, 0.02em 0.05em #02B3FF, 0 -0.02em 0.05em #02B3FF;
+    color: #202020;
+    max-width: 70%;
+    margin-top: 40px;
+}
+
+#contactsContent ul {
+    list-style: none inside;
+    float: left;
+}
+
+@-webkit-keyframes blink {
+    from{text-shadow: -0.02em 0.05em #02B3FF, 0 0.02em 0.05em #02B3FF, 0.02em 0.05em #02B3FF, 0 -0.02em 0.05em #02B3FF;}
+    50% {text-shadow: none}
+    to {text-shadow: -0.02em 0.05em #02B3FF, 0 0.02em 0.05em #02B3FF, 0.02em 0.05em #02B3FF, 0 -0.02em 0.05em #02B3FF;}
+ }
+
+.visibleTitle {
+    opacity: 1;
+    -webkit-transition: opacity 500ms ease-in-out;
+}
+
+.menu ul {
+    list-style: none inside;
+    float: left;
+    position: fixed;
+}
+
+.menu ul li {
+    opacity: 0.5;
+    zoom: normal;
+    padding: 30px 0px;
+    -webkit-transition: opacity 350ms ease-in-out, list-style-image 350ms ease-in-out, -webkit-transform 350ms ease-in-out;
+}
+
+.rotate {
+    -webkit-animation: rotation 1s ease;
+}
+
+@-webkit-keyframes rotation {
+    from {-webkit-transform: rotateY(0deg);}
+    to {-webkit-transform: rotateY(360deg);}
+}
+
+.menu ul li:hover {
+    -webkit-transform: scale(1.1,1.1);
+    opacity: 1;
+    cursor: pointer;
+}
+
+.about:hover {
+    list-style-image: url("http://i.imgur.com/Res7Ezp.png");
+}
+
+.contacts:hover {
+    list-style-image: url("http://i.imgur.com/gl5H42q.png");
+}
+
+.photos:hover {
+    list-style-image: url("http://i.imgur.com/DSghNrN.png");
+}
+
+.articles:hover {
+    list-style-image: url("http://i.imgur.com/xLflyNh.png");
+}
+
+
+.about {
+    list-style-image: url('http://i.imgur.com/ROLrpYO.png');
+}
+
+.contacts {
+    list-style-image: url("http://i.imgur.com/YsccmBf.png");
+}
+
+.photos {
+    list-style-image: url("http://i.imgur.com/8xBkJDg.png");
+}
+
+.articles{
+    list-style-image: url("http://i.imgur.com/O937sfa.png");
+}
+
