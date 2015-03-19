@@ -38,12 +38,9 @@ body {
     cursor: default;
     position: absolute;
     opacity: 0;
-    /*margin: 0.15em 0.5em;
-    margin-top: 40px;*/
     float: left;
     color: #202020;
-    clear-after: both;
-    -webkit-transition: opacity 500ms ease-in-out;
+    -webkit-transition: opacity 500ms ease-in-out, font-size 50ms ease-in-out;
 }
 
 .container {
@@ -51,10 +48,9 @@ body {
 }
 
 .aboutVisible {
-    position: relative;
     opacity: 1;
+    font-size: 300%;
     text-align: center;
-    font-size: 3em;
     font-family: serif;
     font-weight: 200;
     text-shadow: -0.02em 0.05em #02B3FF, 0 0.02em 0.05em #02B3FF, 0.02em 0.05em #02B3FF, 0 -0.02em 0.05em #02B3FF;
