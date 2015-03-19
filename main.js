@@ -1,4 +1,5 @@
 var currentTitle = '';
+var clear = true;
 
 $(document).ready(function(){
     init();
@@ -22,23 +23,24 @@ function setTitle(titleID){
 }
 
 function clickMenuItem(){
+
     $('.wrapper .header').click(function(){
         removeTitle(currentTitle);
         $('#' + currentTitle + 'Content').removeClass(currentTitle + 'Visible');
         init();
     });
+
+
     $('.wrapper .menu ul li').click(function(){
-        //alert($(this).attr('class'));
+        //alert(currentTitle);
+        $(this).removeClass('rotate');
         $('#' + currentTitle + 'Content').removeClass(currentTitle + 'Visible');
         $('#' + $(this).attr('class') + 'Content').addClass($(this).attr('class') + 'Visible');
         $('#' + $(this).attr('class') + 'Content').css('left', ($(document).width() - $('#' + $(this).attr('class') + 'Content').outerWidth())/2 +'px')
             .css('right',($(document).width() - $('#' + $(this).attr('class') + 'Content').outerWidth())/2 + 'px');
         removeTitle(currentTitle);
         setTitle($(this).attr('class'));
-        $(this).addClass('rotate')
-            .mouseout(function(){
-                $(this).removeClass('rotate');
-        });
+        $(this).addClass('rotate');
     });
 }
 

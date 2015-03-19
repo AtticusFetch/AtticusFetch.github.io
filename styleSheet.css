@@ -43,8 +43,7 @@ body {
     float: left;
     color: #202020;
     clear-after: both;
-    -webkit-transition: opacity 500ms ease-in-out, font-size 500ms ease-in-out, font-family 500ms ease-in-out,
-    font-weight 500ms ease-in-out, text-shadow 500ms ease-in-out;
+    -webkit-transition: opacity 500ms ease-in-out;
 }
 
 .container {
